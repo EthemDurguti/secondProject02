@@ -1,0 +1,224 @@
+
+    :root{
+        --bg-color: #efefef;
+        --border-color: rgb(151, 5, 5);
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        /* margin: 0px 30px; */
+        /* padding: 0px 30px; */
+        background-color: var(--bg-color);
+    }
+    /* Header Part */
+    header{
+        background-color: var(--bg-color);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
+
+    }
+    .container-header{
+
+        display: grid;
+        grid-template-columns: 2fr 4fr 2fr;
+        justify-items: center;
+        align-items: center;
+
+        /* border: 1px solid dodgerblue; */
+    }
+    .logo img{
+        margin: 9px 4px;
+        height: 80px;
+        border: 1px solid var(--border-color);
+    }
+    .menu ul li{
+        display: inline;
+        margin: 0px 20px;
+        border-bottom: 1px solid var(--border-color);
+    }
+    .menu ul li:hover{
+        border-bottom: 3px solid var(--border-color);
+
+    }
+    .menu ul li a{
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+    }
+    
+    .search input{
+        border: 1.2px solid var(--border-color);
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .search i {
+        font-size: 22px;
+        padding-right: 5px;
+        color: var(--border-color);
+    }
+    .search input:hover{
+        border: 2.2px solid var(--border-color);
+
+    }
+
+    /* Main Part */
+    section.banner{
+        /* width: 100%; */
+        height: 100vh;
+        /* height: calc(100vh - 102px); */
+        background-image: url(/assets/img/photo-1.jpg);
+        background-size: cover;
+    }
+    .main-content{
+        width: 500px;
+        color: white;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .main-content h1{
+        padding-top: 100px;
+        padding-left: 100px;
+        font-size: 36px;
+    }
+    .main-content p{
+        padding-top: 30px;
+        padding-left: 100px;
+        text-align: center;
+        font-size: 26px;
+    }
+    .main-content button{
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 130px;
+        padding: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        border: 1px solid var(--border-color);
+        color: var(--border-color);
+    }
+    .main-content button:hover{
+        background-color: var(--border-color);
+        color: white;
+    }
+    /* Section Scooters*/
+
+    section.scooters{
+        width: 100%;
+        margin-top: 20px;
+        background-color: var(--bg-color);
+    }
+    .container-scooters{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        padding: 10px;
+    }
+    .box h2{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .box p{
+        text-align: center;
+        font-size: 19px;
+        font-style: italic;
+        font-weight: 500;
+    }
+    
+    .box img{
+        width: 100%;
+        border-radius: 10%;
+    }
+    .box .rent-btn{
+        text-align: center;
+        margin-top: 25px;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid ;
+        cursor: pointer;
+    }
+    .one button{
+        background-color: dodgerblue;
+        color: white;
+    }
+    .two button{
+        background-color: black;
+        color: white;
+    }
+    .three button{
+        background-color: red;
+        color: white;
+    }
+    .after-scooters{
+        margin: 80px ;
+        border: 2px solid var(--border-color);
+    }
+
+    /* Section Partner*/
+    section.partner{
+        /* width: 100%; */
+        display: flex;
+        flex-direction: column;
+    }
+    .partner .partner-text{
+        text-align: center;
+        font-size: 32px;
+    }
+    .partner-text span{
+        color: var(--border-color);
+        display: block;
+        padding: 20px;
+    }
+    span.durguti{
+        font-weight: bold;
+    }
+    .official-partner{
+        /* width: 100%; */
+        height: 600px;
+        background-image: url(/assets/img/xiaomi.png);
+        background-size: cover;
+    }
+
+    /* Footer Part*/
+    footer{
+        background-color: var(--border-color);
+
+    }
+    .footer-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        background-color: var(--border-color);
+    }
+    .links{
+        padding-top: 30px;
+    }
+    .links ul li{
+        list-style-type: none;
+        margin-top: 15px;
+        font-size: 22px;
+    }
+    .links ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    .icons{
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .icons ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .icons ul li {
+        margin: 0px 30px;
+        font-size: 32px;
+    }
