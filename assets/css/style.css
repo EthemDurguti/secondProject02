@@ -323,3 +323,42 @@
         }
 
     }
+    @media screen and (min-width: 440px) and (max-width: 920px){
+        header{
+            position: static;
+        }
+        .container-header{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: no-wrap;
+            padding: 20px;
+            justify-content: space-around;
+        }
+        div.official-partner{
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 150px;
+        }
+        .menu ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 250px;
+        }
+        .logo img{
+            height: 100%;
+        }
+        .logo, .menu, .search{
+            padding-top: 30px;
+        }
+        .search{
+            padding-bottom: 30px;
+        }
+        .container-scooters{
+            display: grid;
+            grid-template-rows: 600px 600px;
+            grid-template-columns: 50% 50% ;
+        }
+    }
